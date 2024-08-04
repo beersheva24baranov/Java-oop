@@ -1,4 +1,4 @@
-package telran.shapes;
+package shapes;
 
 public interface Shape {
     int perimiter();
