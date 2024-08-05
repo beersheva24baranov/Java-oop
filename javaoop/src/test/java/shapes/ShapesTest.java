@@ -43,4 +43,16 @@ public class ShapesTest {
     assertEquals(expectedSquare, canvas.square());
 
   }
+  @Test()
+  void countTest() {
+      Canvas inCanvas = new Canvas();
+      inCanvas.addShape(new Square(7));
+      inCanvas.addShape(new Rectangle(3, 8));
+
+      Canvas canvas = new Canvas();
+      canvas.addShape(inCanvas);
+      canvas.addShape(new Square(10));
+      canvas.addShape(new Rectangle(8, 9));
+      assertEquals(5, canvas.count());
+  }
 }
