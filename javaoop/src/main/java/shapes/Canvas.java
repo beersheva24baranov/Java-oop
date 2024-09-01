@@ -1,15 +1,15 @@
 package shapes;
 
 import telran.util.Arrays;
-public class Canvas implements Shape {
-    Shape[] shapes;
+public class Canvas implements Shape {   // В данном случае, класс Canvas  предоставляет реализацию для метода Shape обязуясь предоставить реализацию для всех методов, объявленных в интерфейсе..Canvas реализует Shape shapes.canvas
+    Shape[] shapes; // массив фигур
 
     public Canvas() {
         shapes = new Shape[0];
     }
 
     public void addShape(Shape shape) {
-        shapes = Arrays.insert(shapes, shapes.length, shape);
+        shapes = Arrays.insert(shapes, shapes.length, shape); // масиив,длину,фигуру
     }
 
     @Override

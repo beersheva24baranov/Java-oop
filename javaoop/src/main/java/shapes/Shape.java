@@ -1,6 +1,6 @@
 package shapes;
 
-public interface Shape {
+public interface Shape { // У интерфейса есть 2 метода 
     int perimiter();
     int square();
 
